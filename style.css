@@ -1,51 +1,53 @@
-/* Reset and base styles */
+/* Reset box-sizing for all elements */
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
+/* Body styling */
 body {
   margin: 0;
-  font-family: 'Courier New', monospace;
-  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f6f7fb, #e3f2fd);
   color: #222;
   line-height: 1.6;
 }
 
-/* Main container */
+/* Main content box */
 main {
   max-width: 720px;
   margin: 10vh auto;
   padding: 24px;
   background: white;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-/* Heading */
+/* Heading style */
 h1 {
-  margin-bottom: 16px;
+  margin-top: 0;
   font-size: 2rem;
-  color: #0a66c2;
+  color: #1565c0;
 }
 
-/* Button */
+/* Button style */
 .btn {
   display: inline-block;
   padding: 12px 20px;
   border-radius: 12px;
   background: #0a66c2;
   color: #fff;
-  text-decoration: none;
   font-weight: bold;
+  letter-spacing: 0.5px;
+  text-decoration: none;
   transition: all 0.3s ease;
 }
 
+/* Button hover animation */
 .btn:hover {
-  opacity: 0.9;
-  transform: scale(1.05);
+  background: #084b91;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Footer */
